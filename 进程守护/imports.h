@@ -1,0 +1,35 @@
+#pragma once
+#include<ntifs.h>
+
+
+NTKERNELAPI
+PVOID
+NTAPI
+PsGetThreadTeb(IN PETHREAD Thread);
+
+
+NTKERNELAPI
+PPEB
+NTAPI
+PsGetProcessPeb(IN PEPROCESS Process);
+
+NTKERNELAPI
+PVOID
+NTAPI
+PsGetProcessWow64Process(IN PEPROCESS Process);
+
+NTSYSAPI
+PIMAGE_NT_HEADERS
+NTAPI
+RtlImageNtHeader(PVOID Base);
+
+NTKERNELAPI
+PPEB
+NTAPI
+PsGetProcessPeb(IN PEPROCESS Process);
+
+NTKERNELAPI
+PVOID
+NTAPI
+PsGetProcessWow64Process(IN PEPROCESS Process);
+
